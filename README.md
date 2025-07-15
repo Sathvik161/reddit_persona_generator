@@ -36,10 +36,6 @@ pip install crawl4ai groq httpx beautifulsoup4
 
 In `main.py`:
 
-```python
-client = Groq(api_key="YOUR_GROQ_API_KEY")
-```
-
 Replace `"YOUR_GROQ_API_KEY"` with your actual key from your [Groq dashboard](https://groq.com).
 
 ---
