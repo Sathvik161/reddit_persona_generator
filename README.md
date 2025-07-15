@@ -1,11 +1,6 @@
-
-
-
-
-
 # 🧠 Reddit User Persona Generator
 
-Generate detailed UX-style personas from any Reddit user's **posts and comments** using **Groq LLaMA 3**.
+Generate detailed personas from any Reddit user's **posts and comments** using **Groq LLaMA 3**.
 
 ---
 
