@@ -1,60 +1,63 @@
-````markdown
-# Reddit User Persona Generator
 
-This project scrapes a Reddit user's **posts and comments** and generates a detailed **persona summary** using **Groq LLaMA 3**, formatted like UX research personas.
 
----
 
-## ✨ **Features**
 
-- Scrapes **user posts (/submitted)** with titles and body text
-- Scrapes **user comments (/comments)** with their associated post titles
-- Uses **Groq LLaMA 3** to analyse data and generate a structured persona
-- Outputs:
-  - **Intermediate JSON file** containing all scraped data
-  - **Final persona text file** in UX research format
+
+# 🧠 Reddit User Persona Generator
+
+Generate detailed UX-style personas from any Reddit user's **posts and comments** using **Groq LLaMA 3**.
 
 ---
 
-## 🛠️ **Requirements**
+## ✨ Features
+
+✅ Scrapes **user posts (/submitted)** with titles and body text  
+✅ Scrapes **user comments (/comments)** with their associated post titles  
+✅ Uses **Groq LLaMA 3** to analyse data and generate structured personas  
+✅ Outputs:
+
+- **Intermediate JSON file** containing all scraped data
+- **Final persona text file** in UX research format
+
+---
+
+## 🛠️ Requirements
 
 - Python 3.8+
 - Groq API Key
 
-### 🔗 **Install dependencies**
+### 🔗 Install dependencies
 
 ```bash
 pip install crawl4ai groq httpx beautifulsoup4
 ```
-````
 
----
 
-## 🔑 **Setup**
+## 🔑 Setup
 
 1. **Clone this repository** or place the script in your project folder.
 
 2. **Add your Groq API Key**:
 
-In the script:
+In `main.py`:
 
 ```python
 client = Groq(api_key="YOUR_GROQ_API_KEY")
 ```
 
-Replace `"YOUR_GROQ_API_KEY"` with your actual key. You can get it from your Groq dashboard.
+Replace `"YOUR_GROQ_API_KEY"` with your actual key from your [Groq dashboard](https://groq.com).
 
 ---
 
-## 🚀 **Usage**
+## 🚀 Usage
 
-### **Run the script**
+### Run the script
 
 ```bash
 python main.py
 ```
 
-### **Input**
+### Input
 
 When prompted, enter the **full Reddit profile URL**, for example:
 
@@ -64,11 +67,11 @@ Enter full Reddit profile URL: https://www.reddit.com/user/Hungry-Move-6603
 
 ---
 
-## 📂 **Output Files**
+## 📂 Output Files
 
 1. **Intermediate JSON data**
 
-   Contains all scraped posts and comments structured by:
+   Contains all scraped posts and comments structured like:
 
    ```json
    {
@@ -93,23 +96,23 @@ Enter full Reddit profile URL: https://www.reddit.com/user/Hungry-Move-6603
 
    Structured persona summary in UX research format, including:
 
-   - Name
-   - Age
-   - Occupation
-   - Status
-   - Location
-   - Tier
-   - Archetype
-   - Traits
-   - Motivations
-   - Personality dimensions
-   - Behaviour & Habits
-   - Frustrations
-   - Goals & Needs
+   * Name
+   * Age
+   * Occupation
+   * Status
+   * Location
+   * Tier
+   * Archetype
+   * Traits
+   * Motivations
+   * Personality dimensions
+   * Behaviour & Habits
+   * Frustrations
+   * Goals & Needs
 
 ---
 
-## 📌 **Example Output**
+## 📌 Example Output
 
 ```
 Name: Hungry-Move-6603
@@ -128,34 +131,39 @@ Motivations:
 
 ---
 
-## ⚠️ **Notes**
+## ⚠️ Notes
 
-- The script uses **virtual scrolling** to load dynamically rendered content. Adjust `scroll_count`, `scroll_by`, and `wait_after_scroll` in the code if needed for longer or shorter profiles.
-- The output persona is generated **purely from user posts and comments** without external knowledge.
-- Ensure your Groq usage stays within your API quota and plan limits.
-
----
-
-## 📝 **To Do**
-
-- [ ] Integrate CLI argument parsing for batch username input
-- [ ] Add persona PDF export
-- [ ] Integrate with existing multi-agent UX research systems
+* Uses **virtual scrolling** to load dynamically rendered content. Adjust `scroll_count`, `scroll_by`, and `wait_after_scroll` in `main.py` if needed for longer or shorter profiles.
+* Persona summaries are generated **purely from user posts and comments** without external knowledge.
+* Ensure your Groq usage stays within your API quota and plan limits.
 
 ---
 
-## 💡 **Author**
+## 📝 To Do
+
+* [ ] Integrate CLI argument parsing for batch username input
+* [ ] Add persona PDF export
+* [ ] Integrate with existing multi-agent UX research systems
+
+---
+
+## 💡 Author
 
 Developed by **V Sathvik**
 
 ---
 
-### 🔗 **License**
+## 🔗 License
 
 This project is for internal research and educational purposes. Contact the author for commercial usage permissions.
 
-```
-
 ---
 
+```
+
+Let me know if you want:
+
+- A **badge header** for GitHub  
+- Direct **Open In Colab / Replit buttons**  
+- A **demo GIF** section to finalise before your upcoming public releases this week.
 ```
