@@ -159,11 +159,3 @@ This project is for internal research and educational purposes. Contact the auth
 
 ---
 
-```
-
-Let me know if you want:
-
-- A **badge header** for GitHub  
-- Direct **Open In Colab / Replit buttons**  
-- A **demo GIF** section to finalise before your upcoming public releases this week.
-```
